@@ -4,8 +4,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Montserrat;
+    font-family: satisfy;
     text-decoration: none;
+    user-select: none;
 }
 body
 {
@@ -30,6 +31,10 @@ header
     align-items: center;
     z-index: 99;
     background-color: rgba(0, 0, 0, 0.5);
+}
+nav a
+{
+    user-select: none;
 }
 .logo
 {
@@ -58,6 +63,7 @@ header
     transform-origin: right;
     transform: scaleX(0);
     transition: .5s;
+    user-select: none;
 }
 .navigation a:hover::after
 {
@@ -76,6 +82,7 @@ header
     color: #fff;
     margin-left: 40px;
     font-weight: 500;
+    
 }
 .navigation .btnLogin-popup:hover
 {
@@ -264,4 +271,3 @@ header
 {
     text-decoration:underline;
 }
-
